@@ -17,9 +17,7 @@ Route::get('/', function () {
 Route::get('nosotros',function(){return view('about-us');});
 Route::get('servicios',function(){return view('services');});
 Route::get('rooms',function(){return view('rooms');});
-Route::get('noticias',function(){return view('blog');});
 Route::get('contacto',function(){return view('contact');});
-Route::get('elementos',function(){return view('elements');});
 
 
 

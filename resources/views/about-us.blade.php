@@ -9,17 +9,28 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>3HC</title>
+    <title>3HCampos</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href={{ asset('img/core-img/favicon.ico') }}>
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href={{ asset('style.css') }}>
 
 </head>
 
 <body>
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/5c067ae6fd65052a5c93b3c2/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
     <!-- Preloader -->
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="cssload-container">
@@ -37,7 +48,7 @@
                     <nav class="classy-navbar justify-content-between" id="palatinNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href={{ url('/') }} class="nav-brand"><img src={{ asset('img/core-img/logo.png') }} alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -55,26 +66,16 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">INICIO</a></li>
-                                    <li class="active"><a href="about-us.html">NOSOTROS</a></li>
-                                    <li><a href="#">PAGINAS</a>
-
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">INICIO</a></li>
-                                            <li><a href="about-us.html">NOSOTROS</a></li>
-                                            <li><a href="services.html">SERVICIOS</a></li>
-                                            <li><a href="contact.html">CONTACTO</a></li>
-                                            <li><a href="elements.html">ELEMENTOS</a></li>
-                                        </ul>
-                                     </li>
-                                  
-                                    <li><a href="services.html">SERVICIOS</a></li>
-                                    <li><a href="contact.html">CONTACTO</a></li>
+                                    <li><a href={{ url('/') }}>INICIO</a></li>
+                                    <li class="active"><a href={{ url('nosotros') }}>NOSOTROS</a></li>
+                                    <li><a href={{ url('servicios') }}>SERVICIOS</a></li>
+                                     <li><a href={{ url('rooms') }}>EXITOS</a></li>
+                                    <li><a href={{ url('contacto') }}>CONTACTO</a></li>
                                 </ul>
 
                                 <!-- Button -->
                                 <div class="menu-btn">
-                                    <a href="#" class="btn palatin-btn">INICIAR CHAT</a>
+                                    <a target="_blank" href="http://facebook.com"> <img src={{ asset('img/bg-img/car.gif') }} width="100" height="100"> </a>
                                 </div>
 
                             </div>
@@ -355,36 +356,22 @@ Se ha asesorado también en materia laboral a efectos de eficientar el uso de su
                 <div class="col-12 col-lg-5">
                     <div class="footer-widget-area mt-50">
                         <a href="#" class="d-block mb-5"><img src="img/core-img/logo.png" alt=""></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. </p>
+                        
                     </div>
                 </div>
 
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="footer-widget-area mt-50">
-                        <h6 class="widget-title mb-5">Find us on the map</h6>
-                        <img src="img/bg-img/footer-map.png" alt="">
+                        <h6 class="widget-title mb-5">Encuentranos en el mapa</h6>
+                        <a href="https://www.google.com/maps/place/3H+Campos/@19.7901159,-99.8735024,17z/data=!4m5!3m4!1s0x85d258c3de3ef0ff:0x87d7f955faab5032!8m2!3d19.790444!4d-99.8736419?hl=en-US"> <img src="img/bg-img/footer-map.png" alt="">
                     </div>
                 </div>
 
-                <!-- Footer Widget Area -->
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="footer-widget-area mt-50">
-                        <h6 class="widget-title mb-5">Subscribe to our newsletter</h6>
-                        <form action="#" method="post" class="subscribe-form">
-                            <input type="email" name="subscribe-email" id="subscribeemail" placeholder="Your E-mail">
-                            <button type="submit">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-
-                <!-- Copywrite Text -->
+                
+              
                 <div class="col-12">
-                    <div class="copywrite-text mt-30">
-                        <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> 3hc<i class="fa fa-heart-o" aria-hidden="true"></i> by 
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                    </div>
+                   
                 </div>
             </div>
         </div>

@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>The Palatin - Hotel &amp; Resort Template</title>
+    <title>3hcampos</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -20,6 +20,17 @@
 </head>
 
 <body>
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/5c067ae6fd65052a5c93b3c2/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
     <!-- Preloader -->
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="cssload-container">
@@ -27,7 +38,7 @@
         </div>
     </div>
 
-    <!-- ##### Header Area Start ##### -->
+       <!-- ##### Header Area Start ##### -->
     <header class="header-area">
         <!-- Navbar Area -->
         <div class="palatin-main-menu">
@@ -37,7 +48,7 @@
                     <nav class="classy-navbar justify-content-between" id="palatinNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href={{ url('/') }} class="nav-brand"><img src={{ asset('img/core-img/logo.png') }} alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -55,66 +66,16 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li class="active"><a href="index.html">Home</a></li>
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="rooms.html">Rooms</a></li>
-                                            <li><a href="blog.html">News</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="elements.html">Elements</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Mega Menu</a>
-                                        <div class="megamenu">
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="rooms.html">Rooms</a></li>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="rooms.html">Rooms</a></li>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="rooms.html">Rooms</a></li>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="rooms.html">Rooms</a></li>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href={{ url('/') }}>INICIO</a></li>
+                                    <li><a href={{ url('nosotros') }}>NOSOTROS</a></li>
+                                    <li><a href={{ url('servicios') }}>SERVICIOS</a></li>
+                                     <li class="active"><a href={{ url('rooms') }}>EXITOS</a></li>
+                                    <li><a href={{ url('contacto') }}>CONTACTO</a></li>
                                 </ul>
 
                                 <!-- Button -->
                                 <div class="menu-btn">
-                                    <a href="#" class="btn palatin-btn">Make a Reservation</a>
+                                    <a target="_blank" href="http://facebook.com"> <img src={{ asset('img/bg-img/car.gif') }} width="100" height="100"> </a>
                                 </div>
 
                             </div>
@@ -126,11 +87,10 @@
         </div>
     </header>
     <!-- ##### Header Area End ##### -->
-
     <!-- ##### Breadcumb Area Start ##### -->
-    <section class="breadcumb-area bg-img d-flex align-items-center justify-content-center" style="background-image: url(img/bg-img/bg-6.jpg);">
+    <section class="breadcumb-area bg-img d-flex align-items-center justify-content-center" style="background-image: url(img/bg-img/E2.jpg);">
         <div class="bradcumbContent">
-            <h2>Rooms</h2>
+            <h2>EXITOS</h2>
         </div>
     </section>
     <!-- ##### Breadcumb Area End ##### -->
@@ -142,61 +102,11 @@
                 <div class="col-12 col-lg-10">
                     <div class="book-now-form">
                         <form action="#">
-                            <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select1">Check In</label>
-                                <select class="form-control" id="select1">
-                                  <option>19 June</option>
-                                  <option>20 June</option>
-                                  <option>21 June</option>
-                                  <option>22 June</option>
-                                  <option>23 June</option>
-                                  <option>24 June</option>
-                                  <option>25 June</option>
-                                </select>
-                            </div>
+                           
 
-                            <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select2">Check Out</label>
-                                <select class="form-control" id="select2">
-                                  <option>20 June</option>
-                                  <option>21 June</option>
-                                  <option>22 June</option>
-                                  <option>23 June</option>
-                                  <option>24 June</option>
-                                  <option>25 June</option>
-                                  <option>26 June</option>
-                                  <option>27 June</option>
-                                </select>
-                            </div>
-
-                            <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select3">Adults</label>
-                                <select class="form-control" id="select3">
-                                  <option>02</option>
-                                  <option>03</option>
-                                  <option>04</option>
-                                  <option>05</option>
-                                  <option>06</option>
-                                </select>
-                            </div>
-
-                            <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select4">Childrens</label>
-                                <select class="form-control" id="select4">
-                                  <option>01</option>
-                                  <option>02</option>
-                                  <option>03</option>
-                                  <option>04</option>
-                                  <option>05</option>
-                                </select>
-                            </div>
-
+                           
                             <!-- Button -->
-                            <button type="submit">Book Now</button>
+                            
                         </form>
                     </div>
                 </div>
@@ -212,8 +122,18 @@
                 <div class="col-12 col-lg-6">
                     <div class="section-heading text-center">
                         <div class="line-"></div>
-                        <h2>Choose a room</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien.</p>
+                        <h2>EXITOS</h2>
+                        <p> 
+Desde hace 25 años tenemos permanencia de éxito con empresas de la entidad del norte del Estado de México en los cuales se ha participado activamente y se ha asesorado a empresas del sector servicio tales como: clubes deportivos, arrendadores de inmuebles, hoteles, moteles, hospitales particulares, despachos de abogados, casos de asistencia pública, fondos regionales de apoyo a comunidades y comedores industriales, así mismo se ha proporcionado el servicio de Out-Sourcing a comercializadoras teles como: restaurantes, tiendas de autoservicio, abarroteras, farmacias, tiendas de computo, Ciber Cafes, ferreterÃ­as, casas de materiales para construcción, comercializadoras de maderas, tiendas de pinturas y solventes entre otras. También a empresas maquiladoras así mismo se ha asesorado un gran número de profesionista como: Médicos, Abogados, Ingenieros, Administrador de empresas y geógrafos de esta manera sean asesorado a empresas dedicadas a la construcción en sus diferentes giros y también a contratistas y empresas transportistas y sin olvidar en mencionar a todas las personas dedicadas a un empleo fijo o temporal (personas por sueldos y salarios), así mismo de esta forma no omitimos a las sociedades sin fines de lucro tales como escuelas, se ha incursionado recientemente en el asesoramiento en el sector gobierno .
+
+Desde la perspectiva en el área de informática administrativa se ha proporcionado el servicio de instalación de redes, implementación de sistemas administrativos, venta de equipó de computo y perif&aecute;ricos, venta de equipo pos y desarrollo de programas administrativos a su medida. También contamos con cursos y capacitación a empresas y a personas individuales.
+
+En el área de sector de impresión se ha tenido la experiencia de asesoramiento a impresores autorizados por el SAT a si como la realización de trabajos de impresión de formatos de control interno para nuestros clientes.
+
+En el área de administración se a incursiona en la implementación de sistemas de recursos humanos en diferentes empresas, diseñando estrategias para fortalecer la calidad en el trabajo del personal de estás, así como sistemas para el desarrollo de habilidades y el valor agregado del factor humano de las empresas, manuales administrativos y puestos
+
+En el área de defensa contribuyente se ha litigado en materia fiscal diversos casos en los cuales la defensa oportuna, aplicación de las leyes fiscales correcta y oportunamente ha sido el arma fundamental para lograr ahorro significativo de dinero a las empresas.
+Se ha asesorado también en materia laboral a efectos de eficientar el uso de sus recursos, en un espacio en el que cada vez se torna más difícil la relación trabajador- patrón logrando obtener una negociación sana para patrón y trabajador.</p>
                     </div>
                 </div>
             </div>
@@ -224,17 +144,13 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
                         <!-- Thumbnail -->
-                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/1.jpg);"></div>
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/Z1.jpg);"></div>
                         <!-- Price -->
-                        <p class="price-from">From $150/night</p>
+                       
                         <!-- Rooms Text -->
-                        <div class="rooms-text">
-                            <div class="line"></div>
-                            <h4>Deluxe Room</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque.</p>
-                        </div>
+                        
                         <!-- Book Room -->
-                        <a href="#" class="book-room-btn btn palatin-btn">Book Room</a>
+                        
                     </div>
                 </div>
 
@@ -242,17 +158,11 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-rooms-area wow fadeInUp" data-wow-delay="200ms">
                         <!-- Thumbnail -->
-                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/8.jpg);"></div>
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/Z2.jpg);"></div>
                         <!-- Price -->
-                        <p class="price-from">From $150/night</p>
-                        <!-- Rooms Text -->
-                        <div class="rooms-text">
-                            <div class="line"></div>
-                            <h4>Double Suite</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque.</p>
-                        </div>
+                        
                         <!-- Book Room -->
-                        <a href="#" class="book-room-btn btn palatin-btn">Book Room</a>
+                        
                     </div>
                 </div>
 
@@ -262,15 +172,7 @@
                         <!-- Thumbnail -->
                         <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/9.jpg);"></div>
                         <!-- Price -->
-                        <p class="price-from">From $100/night</p>
-                        <!-- Rooms Text -->
-                        <div class="rooms-text">
-                            <div class="line"></div>
-                            <h4>Single Room</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque.</p>
-                        </div>
-                        <!-- Book Room -->
-                        <a href="#" class="book-room-btn btn palatin-btn">Book Room</a>
+                      
                     </div>
                 </div>
 
@@ -278,17 +180,9 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
                         <!-- Thumbnail -->
-                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/15.jpg);"></div>
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/bg-2.jpg);"></div>
                         <!-- Price -->
-                        <p class="price-from">From $150/night</p>
-                        <!-- Rooms Text -->
-                        <div class="rooms-text">
-                            <div class="line"></div>
-                            <h4>Deluxe Room</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque.</p>
-                        </div>
-                        <!-- Book Room -->
-                        <a href="#" class="book-room-btn btn palatin-btn">Book Room</a>
+                        
                     </div>
                 </div>
 
@@ -296,17 +190,9 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-rooms-area wow fadeInUp" data-wow-delay="200ms">
                         <!-- Thumbnail -->
-                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/16.jpg);"></div>
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/Z4.jpg);"></div>
                         <!-- Price -->
-                        <p class="price-from">From $150/night</p>
-                        <!-- Rooms Text -->
-                        <div class="rooms-text">
-                            <div class="line"></div>
-                            <h4>Double Suite</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque.</p>
-                        </div>
-                        <!-- Book Room -->
-                        <a href="#" class="book-room-btn btn palatin-btn">Book Room</a>
+                        
                     </div>
                 </div>
 
@@ -314,17 +200,9 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-rooms-area wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumbnail -->
-                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/17.jpg);"></div>
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/Z5.jpg);"></div>
                         <!-- Price -->
-                        <p class="price-from">From $100/night</p>
-                        <!-- Rooms Text -->
-                        <div class="rooms-text">
-                            <div class="line"></div>
-                            <h4>Single Room</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque.</p>
-                        </div>
-                        <!-- Book Room -->
-                        <a href="#" class="book-room-btn btn palatin-btn">Book Room</a>
+                       
                     </div>
                 </div>
 
@@ -332,17 +210,9 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
                         <!-- Thumbnail -->
-                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/18.jpg);"></div>
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/Z6.jpg);"></div>
                         <!-- Price -->
-                        <p class="price-from">From $150/night</p>
-                        <!-- Rooms Text -->
-                        <div class="rooms-text">
-                            <div class="line"></div>
-                            <h4>Deluxe Room</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque.</p>
-                        </div>
-                        <!-- Book Room -->
-                        <a href="#" class="book-room-btn btn palatin-btn">Book Room</a>
+                       
                     </div>
                 </div>
 
@@ -350,17 +220,9 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-rooms-area wow fadeInUp" data-wow-delay="200ms">
                         <!-- Thumbnail -->
-                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/19.jpg);"></div>
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/Z7.jpg);"></div>
                         <!-- Price -->
-                        <p class="price-from">From $150/night</p>
-                        <!-- Rooms Text -->
-                        <div class="rooms-text">
-                            <div class="line"></div>
-                            <h4>Double Suite</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque.</p>
-                        </div>
-                        <!-- Book Room -->
-                        <a href="#" class="book-room-btn btn palatin-btn">Book Room</a>
+                        
                     </div>
                 </div>
 
@@ -368,17 +230,9 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-rooms-area wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumbnail -->
-                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/20.jpg);"></div>
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/Z1.jpg);"></div>
                         <!-- Price -->
-                        <p class="price-from">From $100/night</p>
-                        <!-- Rooms Text -->
-                        <div class="rooms-text">
-                            <div class="line"></div>
-                            <h4>Single Room</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque.</p>
-                        </div>
-                        <!-- Book Room -->
-                        <a href="#" class="book-room-btn btn palatin-btn">Book Room</a>
+                       
                     </div>
                 </div>
 
@@ -387,9 +241,7 @@
                     <div class="pagination-area wow fadeInUp" data-wow-delay="400ms">
                         <nav>
                             <ul class="pagination">
-                                <li class="page-item active"><a class="page-link" href="#">01.</a></li>
-                                <li class="page-item"><a class="page-link" href="#">02.</a></li>
-                                <li class="page-item"><a class="page-link" href="#">03.</a></li>
+                            
                             </ul>
                         </nav>
                     </div>
@@ -409,25 +261,23 @@
                 <div class="col-12 col-lg-5">
                     <div class="footer-widget-area mt-50">
                         <a href="#" class="d-block mb-5"><img src="img/core-img/logo.png" alt=""></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. </p>
+                       
                     </div>
                 </div>
 
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="footer-widget-area mt-50">
-                        <h6 class="widget-title mb-5">Find us on the map</h6>
-                        <img src="img/bg-img/footer-map.png" alt="">
+                       <h6 class="widget-title mb-5">COMO LLEGAR?</h6>
+                      <a href="https://www.google.com/search?q=3hcampos&rlz=1C1NDCM_enMX814MX814&oq=3hcampos&aqs=chrome..69i57j69i61j69i60.32081j0j7&sourceid=chrome&ie=UTF-8&npsic=0&rflfq=1&rlha=0&rllag=19791036,-99870254,360&tbm=lcl&rldimm=9788566462786129970&ved=2ahUKEwiRprztttLfAhUH7awKHS_OB_UQvS4wAHoECAAQIQ&rldoc=1&tbs=lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2#rlfi=hd:;si:9788566462786129970;mv:!1m2!1d19.7917006!2d-99.86645999999999!2m2!1d19.790372899999998!2d-99.87404839999999;tbs:lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2">  <img src="img/bg-img/footer-map.png" alt="">
                     </div>
                 </div>
 
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="footer-widget-area mt-50">
-                        <h6 class="widget-title mb-5">Subscribe to our newsletter</h6>
                         <form action="#" method="post" class="subscribe-form">
-                            <input type="email" name="subscribe-email" id="subscribeemail" placeholder="Your E-mail">
-                            <button type="submit">Subscribe</button>
+                            
                         </form>
                     </div>
                 </div>
@@ -435,9 +285,7 @@
                 <!-- Copywrite Text -->
                 <div class="col-12">
                     <div class="copywrite-text mt-30">
-                        <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                     
                     </div>
                 </div>
             </div>
